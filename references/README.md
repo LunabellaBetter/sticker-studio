@@ -12,9 +12,23 @@ This directory defines how reference material is organized and used.
 | `layout/` | Contact-sheet and crop-layout examples | No |
 | `prompts/` | Reusable generation and animation prompt templates | No |
 
+## Current production learnings
+
+The current reference set establishes a warm hand-drawn pencil / crayon direction with clear facial acting and expressive gestures. The latest batch was close to the desired feeling, but the character was too small and the detail level needs to increase.
+
+For the next batch:
+- enlarge the character within the canvas
+- reduce empty margins
+- use a 1024 px or larger working master where supported
+- target a 640 px export edge where the platform allows
+- preserve facial and linework detail
+- use transparent backgrounds for final chat stickers unless requested otherwise
+
+See [Visual Direction and Accepted Reference Criteria](visual-direction-and-accepted-reference-criteria.md) and [Resolution and Framing](../docs/09-resolution-and-framing.md).
+
 ## Current reference baseline
 
-The current child-character series has a user-approved hand-drawn crayon / pencil style and an approved character prototype. The accepted motion examples demonstrate:
+The current child-character series has a user-approved hand-drawn style and an approved character prototype. Accepted motion examples demonstrate:
 - readable facial acting, not head wobbling
 - a clear action and emotional peak
 - body gestures that reinforce the expression
