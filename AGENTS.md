@@ -19,6 +19,8 @@ Required reading:
 - `docs/09-resolution-and-framing.md`
 - `references/README.md`
 - `references/reference-manifest.example.yml`
+- `references/visual-direction-and-accepted-reference-criteria.md`
+- `examples/ten-sticker-pack-expression-brief.md`
 - relevant prompt templates under `references/prompts/`
 
 Use the latest version available on the task's designated project branch. If the project branch is not specified, inspect the repository's current working branch and report which revision is being used. Do not silently rely on remembered, copied, or outdated rules.
