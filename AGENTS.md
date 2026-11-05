@@ -5,36 +5,38 @@ Create general-purpose chat stickers for everyday communication, social interact
 
 ## Scope exclusions
 - Do not make the character specific to any employer, industry, job title, or profession.
-- Do not add company logos, proprietary slogans, employee data, internal screenshots, or identifiable real people.
-- Do not print a job title or role label into the artwork unless the user explicitly requests a one-off sticker.
+- Do not add company logos, proprietary slogans, employee data, or internal screenshots.
+- Do not assume a default character or default mascot.
 
-## Character identity
-- No character is canonical until the user approves a model sheet.
-- Keep face, hair silhouette, proportions, palette, outfit language, and linework stable across outputs.
-- Pose, expression, gesture, props, and caption may change.
-- Use one approved master reference as the identity source for every new sticker.
-- Treat earlier GIFs as reference material, not proof of a locked character.
+## User-reference-first character workflow
+- The user may supply personal photos, photos of another person, pets, illustrations, or existing character images.
+- Treat the supplied reference as the source of character identity. Extract visible, stable traits and stylize them into one coherent character.
+- Do not ask the user to choose among three unrelated character concepts when they have supplied a character reference.
+- Produce one proposed character model sheet based on the reference and applicable Notion visual rules. Ask the user to approve or correct that proposed identity before batch production.
+- If multiple references conflict or it is unclear which subject should be represented, ask one focused clarification.
+- Once approved, preserve face silhouette, hairstyle, distinguishing features, proportions, palette, outfit language, and linework. Pose, expression, gesture, props, and caption may change.
+- Use the approved model sheet as the identity reference for every sticker and every animation frame.
+
+## Notion multi-sticker prompt reference
+- Use Notion Visual Style Library S37 (Chinese 16-cell chat stickers) and S38 (multilingual sticker pack) as workflow references: character reference, optional layout reference, varied expressions, phrase-count handling, and a coordinated sticker sheet.
+- Do not inherit their deliberately rough MS Paint style unless the user requests it.
+- Strengthen their identity rule: preserve the user's approved character, not merely a consistent drawing style.
+- A contact sheet is a review layout. Final deliverables should be individual, independently usable sticker files.
 
 ## Expression semantics
-Before drawing, establish:
-1. literal phrase or sticker name
-2. intended communicative act
-3. underlying emotion and intensity
-4. relationship/context in which it is sent
-5. desired recipient interpretation
-6. likely misinterpretation to avoid
-
-Never infer that a phrase has only one emotional meaning. For example, “收到” may be warm, neutral, reluctant, or overwhelmed depending on the user's intent.
+Before drawing, establish the intended communicative act, emotion, intensity, social tone, context, desired recipient interpretation, and likely misreading. A phrase can carry multiple meanings; do not infer one meaning from the phrase alone.
+For a batch, prepare a compact list of phrase + intended meaning + proposed visual action for user confirmation when the request does not already define these clearly.
 
 ## Animation
+- Decide whether each sticker needs motion. Do not animate every item by default.
 - Design key poses and timing before producing in-between frames.
 - Use anticipation, action, follow-through, settle, and a deliberate loop transition where appropriate.
-- Keep motion readable and restrained; avoid moving every body part simultaneously.
-- Preserve the character's anatomy and identity across all frames.
+- Preserve character identity across all frames.
 - The final loop must connect without a visible jump or sudden pose reset.
 
 ## Approval and change control
-- Keep candidate styles and unapproved characters clearly marked as drafts.
+- Character status: proposed → approved → revised (new version).
+- Sticker status: draft → needs-revision → approved → published.
 - Do not bulk-produce a series before the character prototype is approved.
 - Do not overwrite approved assets silently.
-- Keep source artwork, key poses, frame sequence, exported GIF, and review notes traceable.
+- Keep source artwork, approved model sheet, expression brief, key poses, frame sequence, exports, and review notes traceable.
