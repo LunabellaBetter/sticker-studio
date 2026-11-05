@@ -1,0 +1,128 @@
+---
+name: sticker-studio
+description: Create consistent, reference-driven chat sticker characters and sticker packs from user-supplied photos, pets, illustrations, or existing characters. Covers character prototype approval, expression semantics, individual sticker illustration, frame-by-frame GIF production, QA, and delivery.
+---
+
+# Sticker Studio Skill
+
+Use this skill for any request involving sticker character creation, sticker packs, expression design, animation, GIF export, or sticker asset QA.
+
+## Mandatory startup
+
+Before production, read the current project version of:
+- `README.md`
+- `AGENTS.md`
+- `docs/01-character-identity.md`
+- `docs/02-expression-intent.md`
+- `docs/03-animation-storyboard.md`
+- `docs/04-quality-assurance.md`
+- `docs/05-reference-driven-sticker-pack.md`
+- `docs/06-character-lock-spec.md`
+- `docs/07-sticker-definition-sheet.md`
+- `docs/08-gif-approval-rules.md`
+- `docs/09-resolution-and-framing.md`
+- `references/README.md`
+- `references/reference-manifest.example.yml`
+- `references/visual-direction-and-accepted-reference-criteria.md`
+- `examples/ten-sticker-pack-expression-brief.md`
+
+Use the task's designated branch. If no branch is named, inspect the current branch and report the exact revision used. Never assume a remembered version is current. If a required document is unavailable, pause the affected production step and identify the missing item.
+
+## Core operating principle
+
+The user's reference defines **who the character is**. The user's intent defines **what the sticker communicates**. The approved character model keeps the complete series consistent.
+
+Do not invent a default mascot. Do not ask the user to choose between unrelated characters when their supplied reference already identifies the subject.
+
+## Production workflow
+
+### 1. Intake and reference separation
+Classify supplied materials:
+- Character identity reference — determines the person / pet / character.
+- Style reference — determines linework, texture, palette, and rendering only.
+- Layout reference — determines contact-sheet arrangement only.
+- Approved output reference — demonstrates an already accepted expression or motion treatment.
+
+Never let a style or layout reference overwrite the approved character identity.
+
+### 2. Build one character prototype
+Extract face shape, hairstyle, hairline, eye and brow shape, mouth construction, age impression, proportions, outfit cues, accessories, and distinguishing features.
+
+Create one proposed model sheet. Include front and three-quarter views, a neutral pose, and an expression range that tests whether the same character remains recognizable. Ask the user to approve or correct this one prototype.
+
+Do not begin bulk production until the user approves it. Once approved, lock identity anchors and reuse the same master reference for every sticker and animation frame.
+
+### 3. Understand the requested expressions
+For each phrase or situation, define:
+- exact caption
+- intended communicative act
+- emotion and intensity
+- social tone and likely chat context
+- desired recipient interpretation
+- misreading to avoid
+- facial acting
+- body acting
+- prop, if useful
+- static or GIF decision
+
+Clarify only genuinely ambiguous meanings. If the user has already explained the intent, do not ask them to reconfirm it.
+
+### 4. Design each sticker as an individual asset
+One sticker is one independent composition and one deliverable file.
+
+A contact sheet may be used for batch review only. It is never a substitute for individual PNG / GIF exports.
+
+For each item:
+1. define one expression and one communicative intent
+2. create a strong key visual
+3. confirm composition, character scale, caption, and gesture
+4. animate only if movement adds meaning
+5. export and inspect the individual file
+
+### 5. Animate with real acting
+Plan anticipation, action, peak expression, follow-through, settle, and loop transition. Use only the beats required by the action.
+
+A GIF must show meaningful facial acting. Eyes, brows, mouth, cheeks, or gaze must change in a way that communicates the emotion. Body motion must reinforce that meaning. Head wobbling or idle bobbing alone fails QA.
+
+One GIF = one expression / one communicative intent. Do not combine unrelated stickers into a single GIF.
+
+### 6. Apply high-resolution composition
+Use `docs/09-resolution-and-framing.md` for working canvas, character scale, face scale, safe margins, text, and export rules.
+
+Do not solve a small-looking sticker by merely enlarging a low-resolution export. Generate / compose at a sufficiently large master size, make the character occupy the intended visual area, preserve line detail, then export to the target platform's supported dimensions.
+
+### 7. Inspect and approve
+Inspect actual exported files, not only previews. Verify:
+- one expression per file
+- semantic accuracy
+- character identity across frames
+- face and body movement
+- timing and loop continuity
+- text accuracy and stability
+- transparent background
+- canvas dimensions and file integrity
+- readability at actual chat size
+
+Mark each item as draft, needs-revision, approved, or published. Never claim a file passed checks that were not performed.
+
+## Reference library
+
+Read `references/README.md` and `references/reference-manifest.example.yml` before using any reference pack.
+
+The public repository must not contain identifiable source photographs or derivative likeness assets of a private person / child without explicit permission from the person or their guardian. Keep such files in the ignored local `references/private/` directory. Public reference examples should be generic, licensed, and provenance-documented.
+
+## Delivery
+
+For a batch, provide:
+- individual transparent PNGs where applicable
+- one independent GIF per animated expression
+- a contact-sheet preview clearly marked as preview
+- a ZIP archive
+- a manifest with filenames, dimensions, frame counts, duration, and QA status
+- a per-item QA result
+
+Do not label a static image as a GIF. Do not mark a pack approved until each file has been inspected.
+
+## Change control
+
+Preserve the approved character and visual direction. Apply feedback only to the affected expression or production parameter unless the user requests a wider redesign. Keep source, key poses, exports, and QA notes traceable.

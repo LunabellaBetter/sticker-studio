@@ -1,0 +1,39 @@
+schema_version: 1
+pack_name: sticker-studio-reference-pack
+pack_status: template
+updated: 2026-11-05
+
+privacy_policy:
+  public_repo: "Do not store identifiable source photos or derivative likeness assets of a private person / child without explicit permission from the person or guardian."
+  private_local_path: "references/private/"
+  private_path_gitignored: true
+
+references:
+  - id: character-model-sheet
+    category: character
+    path: references/private/character/approved-model-sheet.png
+    status: user-approved-private-reference
+    provenance: "User-supplied / user-approved character prototype"
+    permission: "Private project use only; public distribution not confirmed"
+    may_train_or_reuse_for_other_characters: false
+    notes: "Identity anchor for this character series only."
+
+  - id: motion-speechless
+    category: motion
+    path: references/private/motion/approved-speechless.gif
+    status: user-approved-private-reference
+    provenance: "User-supplied approved GIF reference"
+    permission: "Private project use only; public distribution not confirmed"
+    may_train_or_reuse_for_other_characters: false
+    notes: "Reference for facial acting, hand-to-cheek gesture, and readable loop."
+
+  - id: motion-thumbs-up
+    category: motion
+    path: references/private/motion/approved-thumbs-up.gif
+    status: user-approved-private-reference
+    provenance: "User-supplied approved GIF reference"
+    permission: "Private project use only; public distribution not confirmed"
+    may_train_or_reuse_for_other_characters: false
+    notes: "Reference for positive gesture and action progression."
+
+public_references: []

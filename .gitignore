@@ -1,0 +1,12 @@
+# Private character references and source material
+/references/private/**
+!/references/private/README.md
+/reference-assets/private/**
+/private-reference-pack/**
+*.heic
+
+# Local production exports and temporary animation frames
+/output/
+/tmp-frames/
+*.psd
+*.aep
