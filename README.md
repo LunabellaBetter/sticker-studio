@@ -24,11 +24,14 @@ A general-purpose, reference-driven system for creating consistent chat sticker 
 
 ## Project documents
 
-- Character identity and approval — docs/01-character-identity.md
-- Expression intent specification — docs/02-expression-intent.md
-- Animation and frame-by-frame storyboard — docs/03-animation-storyboard.md
-- Quality assurance checklist — docs/04-quality-assurance.md
-- Reference-driven sticker-pack workflow — docs/05-reference-driven-sticker-pack.md
+- [Character identity and approval](docs/01-character-identity.md)
+- [Expression intent specification](docs/02-expression-intent.md)
+- [Animation and frame-by-frame storyboard](docs/03-animation-storyboard.md)
+- [Quality assurance checklist](docs/04-quality-assurance.md)
+- [Reference-driven sticker-pack workflow](docs/05-reference-driven-sticker-pack.md)
+- [Character lock specification](docs/06-character-lock-spec.md)
+- [Sticker definition sheet](docs/07-sticker-definition-sheet.md)
+- [GIF approval rules](docs/08-gif-approval-rules.md)
 
 ## Working principle
 
