@@ -78,7 +78,7 @@ sticker-studio/
 
 The public repository contains reference organization, prompts, and manifest templates. Private character assets remain in the local ignored `references/private/` folder until public-use permission is confirmed.
 
-See [references/README.md](references/README.md).
+See [references/README.md](references/README.md), [visual direction](references/visual-direction-and-accepted-reference-criteria.md), and the [ten-sticker expression example](examples/ten-sticker-pack-expression-brief.md).
 
 ## Status and release discipline
 
