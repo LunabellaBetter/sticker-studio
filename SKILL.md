@@ -23,6 +23,8 @@ Before production, read the current project version of:
 - `docs/09-resolution-and-framing.md`
 - `references/README.md`
 - `references/reference-manifest.example.yml`
+- `references/visual-direction-and-accepted-reference-criteria.md`
+- `examples/ten-sticker-pack-expression-brief.md`
 
 Use the task's designated branch. If no branch is named, inspect the current branch and report the exact revision used. Never assume a remembered version is current. If a required document is unavailable, pause the affected production step and identify the missing item.
 
