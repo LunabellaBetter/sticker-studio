@@ -68,6 +68,10 @@ A reference may be added to the public repository only when:
 - [Character model sheet](prompts/character-model-sheet.md)
 - [Individual sticker and GIF](prompts/individual-sticker-and-gif.md)
 
+## Example expression brief
+
+See [Ten-sticker expression brief](../examples/ten-sticker-pack-expression-brief.md) for a reusable example of phrase-to-expression mapping.
+
 ## Reference manifest
 
 Use [reference-manifest.example.yml](reference-manifest.example.yml) to record provenance, approval, intended usage, and privacy scope.
