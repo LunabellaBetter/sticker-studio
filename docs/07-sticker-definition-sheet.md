@@ -22,6 +22,8 @@
 | Motion idea | Movement that communicates the emotion |
 | Props | Optional supporting object |
 | Static or GIF | Whether motion adds meaning |
+| Distinctness from pack | How this differs from the nearest existing sticker in intent and performance |
+| Caption reveal beat | When text appears, or why no caption is needed |
 | Notes | Special requirements |
 
 ## 2. Choose static PNG or animated GIF
@@ -64,7 +66,13 @@ Before production, verify:
 - proposed action supports the emotion
 - the sticker is distinct from others in the same pack
 
-## 6. Revision handling
+## 6. Pack-level collision review
+
+Before production, compare each row against all other rows and the approved sticker index for the same series. Review caption, communicative act, emotion, face, gesture, motion arc, prop, and chat context. If two rows are near-duplicates, differentiate them, replace one, merge them, or hold them for clarification. Do not rely on wording changes alone.
+
+For every caption, state whether it is absent, visible from the opening, or revealed at a specific emotional beat. Avoid repeating one phrase as both a permanent heading and an in-scene caption.
+
+## 7. Revision handling
 
 Translate feedback into an explicit field update:
 - “太夸张了” → lower intensity
@@ -75,7 +83,7 @@ Translate feedback into an explicit field update:
 
 Do not make unrelated visual changes.
 
-## 7. Compact worksheet
+## 8. Compact worksheet
 
 ```text
 Sticker ID:
