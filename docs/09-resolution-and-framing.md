@@ -64,7 +64,15 @@ Avoid micro-detail that disappears at chat size. Keep the outer silhouette stron
 - Keep caption position and size stable.
 - For ping-pong loops, inspect the transition at both ends; for cyclic motion, match the first and last pose and motion direction.
 
-## 7. Chat-size preview
+## 7. Project-specific approved output profile
+
+Do not assume one canvas or character scale for every project. Extract the production profile from the user's latest approved output and record it before the next batch.
+
+For one user-approved child-character series, the accepted delivery profile is a **512 × 512 px square canvas**, transparent background, large face / upper-body close-up, character filling most of the usable area, minimal unused margins, and sufficient safe clearance for hair, hands, and text. This is a series-specific approved profile, not a universal Sticker Studio default. Apply it to that series until the user changes it; other characters and target platforms must use their own approved profile.
+
+When the user says the sticker looks too small in chat, recompose or regenerate with a tighter crop and larger character / face. Do not merely enlarge a low-resolution export or crop away meaningful gestures.
+
+## 8. Chat-size preview
 
 Review every sticker at:
 - master size (detail and defects)
