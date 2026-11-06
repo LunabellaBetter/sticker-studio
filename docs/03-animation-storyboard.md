@@ -98,7 +98,7 @@ For simple actions, a controlled 2D rig or image-layer animation may provide mor
 
 | Parameter | Initial target |
 |---|---|
-| Canvas | 512 × 512 px working master |
+| Canvas | Follow the approved project-specific master / export profile; do not assume a universal fixed size |
 | Background | Transparent |
 | Frame rate | Test 8–12 FPS |
 | Loop | Seamless |
