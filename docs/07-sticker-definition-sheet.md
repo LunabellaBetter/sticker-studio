@@ -98,5 +98,7 @@ Body acting:
 Motion idea:
 Prop:
 Static or GIF:
+Distinctness from pack:
+Caption reveal beat:
 Notes:
 ```
