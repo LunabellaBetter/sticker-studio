@@ -66,3 +66,11 @@ Example:
 | 辛苦了 | Sincere appreciation | Gentle smile and slight bow |
 
 The same phrase may need a different visual action if the user's context or desired tone differs.
+
+## 6. Cross-pack distinctness review
+
+Before approving a batch, compare every proposed sticker with the other items in the batch and the previously approved stickers in the same series. Compare communicative act, emotion and intensity, facial acting, body gesture, motion arc, props, and typical chat context—not caption wording alone.
+
+Flag near-duplicates before illustration. For example, “嗯嗯”, “收到”, and “我知道了” can all collapse into a generic nod unless each has a distinct social nuance and performance. A crying expression and a request for a hug can also look alike unless tears / distress are clearly separated from the active comfort-seeking gesture.
+
+For each pair that feels similar, choose one action: differentiate the acting and use case, replace one phrase, merge into one stronger sticker, or hold for clarification. Do not increase pack size by keeping redundant variants.
