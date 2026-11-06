@@ -2,7 +2,6 @@
 
 A general-purpose, reference-driven production system for creating consistent chat sticker characters and sticker packs from user-supplied photos, pets, illustrations, or existing characters.
 
-**Current development branch:** `work/character-animation-foundation`  
 **Package status:** Skill and production documentation foundation; reference library structure established.
 
 ## Start here
