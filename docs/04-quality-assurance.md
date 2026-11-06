@@ -8,6 +8,8 @@ A GIF is approved only when it passes semantic, visual, temporal, and technical 
 - [ ] Intensity matches the user's intent.
 - [ ] No likely unintended reading (sarcasm, anger, dismissal, flirtation, etc.).
 - [ ] Caption and body language reinforce each other.
+- [ ] The sticker is distinct from other items in the current and previously approved pack.
+- [ ] No redundant caption, fixed title, or duplicate phrase weakens the composition.
 
 ## B. Character QA
 - [ ] Same face construction as the approved master.
@@ -25,16 +27,20 @@ A GIF is approved only when it passes semantic, visual, temporal, and technical 
 - [ ] Peak expression has enough reading time.
 - [ ] No jitter, flicker, shape mutation, or accidental frame jump.
 - [ ] At least three consecutive loops have no visible seam.
+- [ ] The actual animated GIF can be previewed or directly opened from the delivery link.
 
 ## D. Small-size QA
 - [ ] Meaning remains legible at 240 px.
 - [ ] Silhouette remains recognizable at 96 px.
 - [ ] Caption remains readable at actual chat size.
+- [ ] Character / face scale matches the approved project profile at phone size.
+- [ ] Caption appears at the intended emotional beat and has enough hold time to read.
 - [ ] Important details are not lost against transparent backgrounds.
 
 ## E. Technical QA
 - [ ] GIF opens in standard viewers.
-- [ ] Transparent background behaves correctly.
+- [ ] Transparent background behaves correctly on every frame, including after palette conversion.
+- [ ] The file opens and plays in a standard viewer.
 - [ ] Frame timing and loop metadata are intentional.
 - [ ] Canvas dimensions are consistent across the set.
 - [ ] File size is within the target platform's current limit.
