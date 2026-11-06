@@ -15,6 +15,7 @@ Emotion and intensity: [EMOTION, 1–5]
 Social tone: [TONE]
 Typical chat context: [CONTEXT]
 Misreading to avoid: [UNWANTED READING]
+Distinct from existing pack items by: [INTENT / FACE / GESTURE / MOTION / CONTEXT]
 
 FACIAL ACTING
 Eyes: [SHAPE / GAZE / CHANGE]
@@ -36,10 +37,14 @@ COMPOSITION
 - high-resolution master, 1024 px or larger on the long edge
 - strong silhouette and readable details
 - caption stays clear of the face and remains legible
+- do not add a permanent title above the character unless requested
+- if text is useful, reveal it at the planned emotional beat and hold it steadily afterward
+- avoid repeating the same phrase in multiple locations
 - no panels, contact-sheet grid, neighboring sticker, or colored backplate unless requested
 
 ANIMATION (if GIF)
 Create a clear opening pose, anticipation, main action, emotional peak, follow-through, readable hold, and a natural loop transition.
+The animation must be distinct from the nearest existing stickers in the pack; do not reuse their full facial / gesture / motion combination.
 Change the face meaningfully; do not rely on head wobbling or idle bobbing.
 Keep canvas, character scale, identity, caption, and transparency consistent across frames.
 

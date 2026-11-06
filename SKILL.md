@@ -21,6 +21,7 @@ Before production, read the current project version of:
 - `docs/07-sticker-definition-sheet.md`
 - `docs/08-gif-approval-rules.md`
 - `docs/09-resolution-and-framing.md`
+- `docs/10-repeatable-production-protocol.md`
 - `references/README.md`
 - `references/reference-manifest.example.yml`
 - `references/visual-direction-and-accepted-reference-criteria.md`
@@ -91,7 +92,11 @@ Use `docs/09-resolution-and-framing.md` for working canvas, character scale, fac
 
 Do not solve a small-looking sticker by merely enlarging a low-resolution export. Generate / compose at a sufficiently large master size, make the character occupy the intended visual area, preserve line detail, then export to the target platform's supported dimensions.
 
-### 7. Inspect and approve
+### 7. Stabilize batch production
+
+Before producing a batch, lock the approved identity, style, motion, composition, and text-treatment references as separate anchors. Derive a project-specific production profile from the latest user-approved output; do not impose one character or output specification on other projects. Compare captions, communicative intent, emotion, facial acting, body gesture, motion arc, props, and chat context across the current and prior approved pack. Different wording alone does not make two stickers distinct. Revise, replace, or remove collisions before generation. Treat captions as part of the acting: reveal text at a meaningful beat when useful, then hold it stable; avoid permanent duplicate headings. Produce and inspect each final sticker independently. Follow `docs/10-repeatable-production-protocol.md` for the full repeatable method.
+
+### 8. Inspect and approve
 Inspect actual exported files, not only previews. Verify:
 - one expression per file
 - semantic accuracy
@@ -114,6 +119,8 @@ The public repository must not contain identifiable source photographs or deriva
 ## Delivery
 
 For a batch, provide:
+- inline animated previews when the client supports them
+- direct links to each individual GIF
 - individual transparent PNGs where applicable
 - one independent GIF per animated expression
 - a contact-sheet preview clearly marked as preview

@@ -17,6 +17,7 @@ Required reading:
 - `docs/07-sticker-definition-sheet.md`
 - `docs/08-gif-approval-rules.md`
 - `docs/09-resolution-and-framing.md`
+- `docs/10-repeatable-production-protocol.md`
 - `references/README.md`
 - `references/reference-manifest.example.yml`
 - `references/visual-direction-and-accepted-reference-criteria.md`
@@ -72,7 +73,10 @@ For a batch, prepare a compact phrase + intended meaning + proposed visual actio
 - One GIF represents one sticker / one communicative intent. Never combine unrelated stickers in one GIF.
 - A GIF must show meaningful facial acting; head or body movement alone is insufficient when the expression itself does not change.
 - Body motion must support the intended emotion. Avoid decorative idle wobbling.
-- Include requested caption text accurately and keep it stable across frames.
+- Treat text as part of the performance: it may appear at a planned emotional beat, then must remain legible and stable; avoid redundant permanent headings or duplicate captions.
+- Before a batch, compare captions, communicative acts, emotions, facial acting, gestures, motion arcs, props, and chat contexts against other items in the pack and previously approved stickers. Different wording alone does not prove a distinct sticker.
+- Use approved identity, style, motion, composition, and text-treatment references as separate anchors. Do not let later generated outputs silently replace the approved identity source.
+- Lock project-specific canvas, character scale, transparency, caption behavior, and pacing from the user's latest approved sample; do not impose one project's settings on another.
 - Apply the pass/fail rules in `docs/08-gif-approval-rules.md`.
 
 ## Resolution and framing
@@ -80,6 +84,7 @@ For a batch, prepare a compact phrase + intended meaning + proposed visual actio
 - Use `docs/09-resolution-and-framing.md` for master canvas, character scale, safe margins, and export.
 - Generate / compose at high resolution. Do not solve a small-looking asset through simple upscaling alone.
 - Keep the character visually dominant and preserve fine linework at export size.
+- Derive exact canvas ratio and dimensions from the approved project profile. A 512 × 512 square, large-face, transparent export is an approved profile for one current series, not a universal default.
 
 ## Approval and change control
 
@@ -97,3 +102,4 @@ For a batch, prepare a compact phrase + intended meaning + proposed visual actio
 - Inspect actual exported files: animation, frame timing, dimensions, transparency, text, loop continuity, and identity consistency.
 - Report failed checks honestly. Do not describe a file as a GIF if it is static.
 - Provide a clear file list, manifest, preview, and ZIP for multi-asset delivery.
+- For mobile-first delivery, show the actual animated GIF inline when supported and provide direct links to each individual GIF plus a ZIP. A contact sheet is secondary review material only.

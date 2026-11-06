@@ -34,6 +34,7 @@ Some stickers need only a small action and hold. Do not force every sticker into
 - Add slight overshoot only when the emotion supports it.
 - Separate primary motion from secondary motion. Hair and sleeves should lag behind the body slightly.
 - Let the strongest expression settle long enough to be read.
+- Keep the pace unhurried enough for actual mobile chat viewing; do not rush the emotional peak or caption reveal.
 - Keep the eyes, mouth, and gesture synchronized.
 - Avoid moving every feature in every frame.
 - Keep camera framing stable unless a camera move is part of the intended joke or emphasis.
@@ -62,7 +63,15 @@ A simple 0.9–1.4 second loop may allocate:
 
 Adjust by expression. A blink, quick shock, gentle nod, and long sigh need different timing.
 
-## 6. Frame production strategy
+## 6. Caption as part of the performance
+
+Text is optional. Use it only when it clarifies the communicative intent or adds a punchline. Do not automatically place a permanent title above every character.
+
+When timing matters, reveal the caption at the semantic beat: for example, let a smile disappear first, then reveal “不嘻嘻”. Once visible, keep the exact wording, position, and letterform stable for a readable hold. Do not repeat the same phrase as a top heading, speech bubble, and secondary caption. Avoid text appearing before the expression that gives it meaning.
+
+The caption may be absent in the opening frames. This is intentional, not text instability. After its planned reveal, it must not mutate, jitter, or jump.
+
+## 7. Frame production strategy
 
 Preferred order:
 1. approve the static key visual
@@ -77,7 +86,7 @@ Do not rely on a single unconstrained prompt to generate a complete GIF. Indepen
 
 For simple actions, a controlled 2D rig or image-layer animation may provide more consistency than regenerating each frame. For complex actions, use more key poses and review transitions individually.
 
-## 7. Loop design
+## 8. Loop design
 
 - Match the final frame to the opening frame in position, scale, and silhouette.
 - Where possible, match motion direction and velocity at the loop boundary.
@@ -85,16 +94,16 @@ For simple actions, a controlled 2D rig or image-layer animation may provide mor
 - Use a held neutral pose only when it is part of the intended rhythm.
 - Preview at least three consecutive loops.
 
-## 8. Technical starting targets
+## 9. Technical starting targets
 
 | Parameter | Initial target |
 |---|---|
-| Canvas | 512 × 512 px working master |
+| Canvas | Follow the approved project-specific master / export profile; do not assume a universal fixed size |
 | Background | Transparent |
 | Frame rate | Test 8–12 FPS |
 | Loop | Seamless |
 | Motion | One primary action per sticker |
-| Caption | Fixed across frames; no text flicker |
+| Caption | Optional; reveal at a planned beat when useful, then hold exact text and placement steadily |
 | Safe area | Keep character and caption away from canvas edge |
 
 Platform-specific dimensions and file-size limits must be checked separately before final export.

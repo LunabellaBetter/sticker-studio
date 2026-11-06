@@ -84,17 +84,23 @@ Not allowed:
 - one GIF behaving like a slideshow of separate stickers
 - accidental frame-to-frame text changes
 
-## 7. Text stability
+## 7. Text treatment and stability
 
 If text is shown:
 - wording must be correct
-- wording must remain stable unless intentionally animated
-- placement must not flicker or jump
+- text may be absent in opening frames when it is intentionally revealed at the emotional / semantic beat
+- after appearing, wording, letterform, size, and placement must remain stable for a readable hold
 - text must remain legible at small size
+- do not repeat the same phrase as a permanent heading plus a speech bubble / in-scene caption
+- placement must not flicker or jump
 
-Fail if text mutates, jitters, is misspelled, or redraws inconsistently.
+Fail if text appears before its emotional context, mutates, jitters, is misspelled, redraws inconsistently, repeats redundantly, or remains as a decorative heading that weakens the sticker.
 
-## 8. Technical approval
+## 8. Pack-level distinctness
+
+Before approving a batch, compare each GIF with the other items in the batch and the previously approved stickers in the same series. Confirm distinct communicative intent, emotion, facial acting, body gesture, motion arc, and chat context. Different captions or props alone do not prove meaningful differentiation. Near-duplicates must be revised, replaced, merged, or explicitly accepted by the user as deliberate variants.
+
+## 9. Technical approval
 
 Recommended:
 - transparent background
@@ -110,7 +116,7 @@ Fail if:
 - export is corrupted
 - frame canvas changes create a visible jump
 
-## 9. Pass/fail checklist
+## 10. Pass/fail checklist
 
 A GIF is approved only if all are true:
 - [ ] one GIF, one expression
@@ -119,11 +125,12 @@ A GIF is approved only if all are true:
 - [ ] body action supports the emotion
 - [ ] motion feels natural, not mechanical
 - [ ] no obvious loop seam
-- [ ] caption is correct and stable
+- [ ] caption is correct, intentionally timed, non-duplicated, and stable after reveal
+- [ ] sticker is distinct from the rest of the pack
 - [ ] character identity stays consistent across frames
 - [ ] file is independently usable
 
-## 10. Common failure reasons
+## 11. Common failure reasons
 
 - **Head wobble only:** head moves but eyes, brows, and mouth do not meaningfully change.
 - **Multiple expressions in one GIF:** the file scrolls through unrelated reactions.
@@ -131,7 +138,7 @@ A GIF is approved only if all are true:
 - **Identity drift:** hairstyle, face, or proportions visibly change between frames.
 - **Text mutation:** caption shifts, redraws incorrectly, or changes accidentally.
 
-## 11. Review order
+## 12. Review order
 
 Review in this order:
 1. one expression or multiple?

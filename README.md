@@ -2,7 +2,6 @@
 
 A general-purpose, reference-driven production system for creating consistent chat sticker characters and sticker packs from user-supplied photos, pets, illustrations, or existing characters.
 
-**Current development branch:** `work/character-animation-foundation`  
 **Package status:** Skill and production documentation foundation; reference library structure established.
 
 ## Start here
@@ -39,7 +38,8 @@ sticker-studio/
 │   ├── 06-character-lock-spec.md
 │   ├── 07-sticker-definition-sheet.md
 │   ├── 08-gif-approval-rules.md
-│   └── 09-resolution-and-framing.md
+│   ├── 09-resolution-and-framing.md
+│   └── 10-repeatable-production-protocol.md
 └── references/
     ├── README.md
     ├── reference-manifest.example.yml
@@ -58,6 +58,8 @@ sticker-studio/
 - Head wobbling without meaningful facial change fails GIF QA.
 - A contact sheet is a review artifact, never a substitute for individual sticker files.
 - Use a high-resolution master and make the character visually dominant; see [Resolution and Framing](docs/09-resolution-and-framing.md).
+- Before batch generation, check semantic and visual collisions across the current and previously approved pack; see [Repeatable Production Protocol](docs/10-repeatable-production-protocol.md).
+- Treat captions as part of the performance: reveal them at a meaningful beat when useful, and avoid redundant fixed headings.
 - Public references require documented provenance and permission. Keep private photos and derivative child likeness assets out of the public repository without guardian permission.
 
 ## Production documents
@@ -73,6 +75,7 @@ sticker-studio/
 | [07 Sticker Definition Sheet](docs/07-sticker-definition-sheet.md) | Per-sticker production brief |
 | [08 GIF Approval Rules](docs/08-gif-approval-rules.md) | Explicit GIF pass / fail rules |
 | [09 Resolution and Framing](docs/09-resolution-and-framing.md) | Master size, scale, detail, and export |
+| [10 Repeatable Production Protocol](docs/10-repeatable-production-protocol.md) | Reference anchors, collision checks, text timing, reproducible production, and mobile delivery |
 
 ## Reference library
 

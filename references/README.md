@@ -14,17 +14,13 @@ This directory defines how reference material is organized and used.
 
 ## Current production learnings
 
-The current reference set establishes a warm hand-drawn pencil / crayon direction with clear facial acting and expressive gestures. The latest batch was close to the desired feeling, but the character was too small and the detail level needs to increase.
+Stable results come from keeping the approved identity, style, motion, composition, and text-treatment references separate and reusing the same approved identity anchor throughout a series. A successful output should be recorded as a reference for the dimension it demonstrates; a generated output must not silently replace the character identity source.
 
-For the next batch:
-- enlarge the character within the canvas
-- reduce empty margins
-- use a 1024 px or larger working master where supported
-- target a 640 px export edge where the platform allows
-- preserve facial and linework detail
-- use transparent backgrounds for final chat stickers unless requested otherwise
+For each project, derive and lock a project-specific profile from the user's latest approved output: canvas, character scale, crop, transparency, caption behavior, pace, and delivery format. One child-character series has an approved 512 × 512 square, large-face, transparent profile. This is not a global default for other characters or projects.
 
-See [Visual Direction and Accepted Reference Criteria](visual-direction-and-accepted-reference-criteria.md) and [Resolution and Framing](../docs/09-resolution-and-framing.md).
+Before batch production, check for repeated captions, communicative intent, facial acting, gestures, motion arcs, and props across both the new batch and previously approved stickers. Treat text as part of the performance; reveal it at the meaningful beat when useful, then keep it stable and avoid redundant fixed headings.
+
+See [Visual Direction and Accepted Reference Criteria](visual-direction-and-accepted-reference-criteria.md), [Resolution and Framing](../docs/09-resolution-and-framing.md), and [Repeatable Production Protocol](../docs/10-repeatable-production-protocol.md).
 
 ## Current reference baseline
 
