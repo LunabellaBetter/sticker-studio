@@ -38,9 +38,8 @@ A GIF is approved only when it passes semantic, visual, temporal, and technical 
 - [ ] Important details are not lost against transparent backgrounds.
 
 ## E. Technical QA
-- [ ] GIF opens in standard viewers.
+- [ ] GIF opens and plays in standard viewers.
 - [ ] Transparent background behaves correctly on every frame, including after palette conversion.
-- [ ] The file opens and plays in a standard viewer.
 - [ ] Frame timing and loop metadata are intentional.
 - [ ] Canvas dimensions are consistent across the set.
 - [ ] File size is within the target platform's current limit.
