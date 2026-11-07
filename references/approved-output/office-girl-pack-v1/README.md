@@ -36,4 +36,4 @@ Do not copy the exact character into another series. The approved character mode
 
 ## Binary asset status
 
-The source files are present in the conversation upload context and have been catalogued above. The GitHub text reference record is being established separately from the binary GIF payloads; do not treat this README alone as proof that the ten GIF binaries are present in the repository. Each binary must be committed under this directory and verified by re-reading the GitHub file before the reference pack is marked fully ingested.
+All ten animated GIF reference files (`01-breakdown.gif` through `10-logging-off.gif`) are committed in this directory. Each binary payload has been verified against its documented byte size, 4-frame GIF structure, per-frame transparency, and SHA-256 digest in `manifest.yml`. The reference pack is fully ingested (`Fully Ingested`).
