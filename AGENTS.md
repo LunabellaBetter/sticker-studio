@@ -103,3 +103,36 @@ For a batch, prepare a compact phrase + intended meaning + proposed visual actio
 - Report failed checks honestly. Do not describe a file as a GIF if it is static.
 - Provide a clear file list, manifest, preview, and ZIP for multi-asset delivery.
 - For mobile-first delivery, show the actual animated GIF inline when supported and provide direct links to each individual GIF plus a ZIP. A contact sheet is secondary review material only.
+
+
+## Batch definition gate
+
+Before producing a new sticker batch, create one compact definition row per requested sticker. At minimum record:
+- exact visible caption (or explicitly no caption)
+- intended meaning / chat use
+- emotion and tone
+- key facial expression and body action
+- one likely misreading to avoid, when relevant
+
+The user-facing confirmation should stay compact. If the user has already supplied a clear phrase list and intent, infer the straightforward details and proceed; do not ask them to reconfirm the entire list. Ask only about materially ambiguous items. Do not begin final generation while the requested sticker list or a consequential ambiguous meaning remains unresolved.
+
+If the user is unsure how a phrase should be performed or how a pack should progress, use web search to collect suitable public examples and propose a small set of interpretations. Research is optional and targeted, not a mandatory step for every batch. Use examples as inspiration for expression, gesture, tone, and sequence only; do not copy another creator's character, distinctive artwork, composition, or complete sticker. Keep source links and a short note in the batch brief, then obtain user approval for the proposed meanings before production. See `docs/11-expression-reference-research.md`.
+
+## Reproducible batch method
+
+- Preserve the production method, model/tool, approved references, prompt structure, and post-processing recipe that previously produced user-approved results for the same character series.
+- Do not switch between contact-sheet, per-sticker, or hybrid generation methods midway through a batch without recording the reason and obtaining approval when the change affects the expected result.
+- A contact sheet may be used when it is part of a proven successful workflow, but it remains a review/intermediate asset. Every final sticker must be independently exported and checked.
+- When a previously successful batch begins to drift, stop expanding the batch. Compare the last successful recipe with the current run: actual loaded identity/style references, model/tool/version, prompt, generation mode, canvas, transparency handling, and post-processing. Change one material variable at a time where practical.
+- Record the successful recipe and its evidence so later batches can reproduce it. Do not assume a Skill file or manifest proves that a reference was actually loaded during generation.
+
+## Five-point delivery contract
+
+Unless the user explicitly requests a different treatment, every final chat sticker must pass all five user-priority checks:
+1. **Character appearance:** aesthetically acceptable and consistent with the approved character identity and style.
+2. **Caption layout:** exact wording, legible, with no overlap, accidental duplication, or obstruction.
+3. **Meaning match:** facial expression, pose, and action clearly fit the caption and intended chat meaning.
+4. **Square canvas:** 1:1 output by default; use the approved project-specific pixel dimensions. Do not stretch artwork to force a square.
+5. **Transparent background:** verify actual alpha/transparency in the exported file, including every GIF frame.
+
+These five checks are the first approval gate. GIF timing, natural movement, loop continuity, file integrity, and target-platform limits remain additional technical checks when applicable. A generated preview alone does not prove export compliance.
