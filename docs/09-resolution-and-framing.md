@@ -81,3 +81,17 @@ Review every sticker at:
 - 96 px preview (silhouette and recognition)
 
 If the expression disappears at 96–240 px, simplify and strengthen the expression before delivery.
+
+
+## 9. Default chat-sticker output contract
+
+Unless the user explicitly requests another shape or a target platform requires a different profile:
+- use a **square 1:1 canvas**
+- use a **transparent background**
+- keep the character, gesture, props, and caption within the safe area
+- do not stretch the artwork to force a square; recompose the layout instead
+- use the current character series' approved pixel dimensions rather than assuming one universal export size
+
+For a GIF, every frame must have exactly the same square canvas dimensions. Verify transparency in every frame of the actual exported GIF, not only in the first frame or a preview. A background color shown by an image viewer may be its transparency display; inspect the file's alpha/transparency data before deciding it has an opaque background.
+
+A user-approved reference may have a non-square canvas. It can still guide character appearance, linework, expression, caption treatment, or motion. Do not copy its canvas ratio when the current production profile requires square output.
