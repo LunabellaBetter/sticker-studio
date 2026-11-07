@@ -18,7 +18,7 @@ Required reading:
 - `docs/08-gif-approval-rules.md`
 - `docs/09-resolution-and-framing.md`
 - `docs/10-repeatable-production-protocol.md`
-- `references/README.md`
+- `docs/11-expression-reference-research.md` when web research is used or expression meaning/progression is uncertain
 - `references/reference-manifest.example.yml`
 - `references/visual-direction-and-accepted-reference-criteria.md`
 - `examples/ten-sticker-pack-expression-brief.md`
