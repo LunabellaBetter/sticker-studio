@@ -53,6 +53,9 @@ sticker-studio/
 
 - The user's reference determines the character. No default mascot is imposed.
 - The character model sheet must be approved before batch production.
+- Confirm the exact sticker list and intended meaning before final generation; clarify only consequential ambiguity.
+- Reuse the previously successful production recipe for the same character series.
+- Every final sticker must pass the five-point contract: approved character appearance, clear/non-overlapping caption, caption-to-expression match, square 1:1 canvas by default, and verified transparent background.
 - A phrase must be translated into communicative intent, emotion, facial acting, and body acting.
 - One GIF represents one sticker and one communicative intent.
 - Head wobbling without meaningful facial change fails GIF QA.
@@ -76,6 +79,7 @@ sticker-studio/
 | [08 GIF Approval Rules](docs/08-gif-approval-rules.md) | Explicit GIF pass / fail rules |
 | [09 Resolution and Framing](docs/09-resolution-and-framing.md) | Master size, scale, detail, and export |
 | [10 Repeatable Production Protocol](docs/10-repeatable-production-protocol.md) | Reference anchors, collision checks, text timing, reproducible production, and mobile delivery |
+| [11 Expression Reference Research](docs/11-expression-reference-research.md) | Optional web research for expression ideas and pack progression |
 
 ## Reference library
 
