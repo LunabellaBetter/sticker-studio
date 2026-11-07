@@ -71,3 +71,22 @@ See [Ten-sticker expression brief](../examples/ten-sticker-pack-expression-brief
 ## Reference manifest
 
 Use [reference-manifest.example.yml](reference-manifest.example.yml) to record provenance, approval, intended usage, and privacy scope.
+
+
+## Approved output references
+
+Use `approved-output/` for complete sticker images or GIFs that the user has explicitly approved and authorized for the intended repository visibility.
+
+Each approved output pack must include a small manifest recording:
+- series / character scope
+- source and permission basis
+- original filename and repository path
+- dimensions, frame count, and transparency status when verified
+- which dimensions the output may guide: character identity, style, expression, motion, composition, or text treatment
+- restrictions on reuse
+
+Do not assume every approved output is an identity reference. A reference from another character series may guide only the visual dimensions it demonstrates. It must never overwrite or merge with the current series' approved character identity.
+
+The user-provided ten-sticker office-girl pack is a separate approved-output reference series. It may guide aesthetic quality, hand-drawn rendering, expression-to-caption matching, speech-bubble treatment, and motion examples. It is not the identity source for the separate child-character series.
+
+See `approved-output/office-girl-pack-v1/README.md` and its manifest.
