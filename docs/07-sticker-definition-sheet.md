@@ -1,104 +1,88 @@
 # 07 · Sticker Definition Sheet
 
-**Purpose:** Convert the user's requested phrase or reaction into a precise, producible sticker brief. A sticker is defined by what the user means, not only by its visible text.
+**Purpose:** Confirm what each sticker communicates before production, without making the user complete an unnecessarily long questionnaire.
 
-## 1. Required fields
+## 1. Minimum definition required for every sticker
 
-| Field | What to record |
+| Field | Requirement |
 |---|---|
 | Sticker ID | Stable internal ID |
-| Visible caption | Exact text shown, if any |
-| Literal meaning | What the words literally say |
+| Exact caption | Exact visible text, or explicitly no caption |
 | Intended meaning | What the sender wants to convey |
-| Communicative act | acknowledge / tease / comfort / celebrate / refuse / complain / etc. |
-| Emotion | Primary emotion |
-| Intensity | 1–5 |
-| Social tone | warm / neutral / playful / awkward / sarcastic / etc. |
-| Typical use context | Chat situation where it is used |
-| Desired recipient reading | How the recipient should interpret it |
-| Misreading to avoid | Unintended interpretation |
-| Facial acting | Eyes / brows / mouth / cheeks / gaze |
-| Body acting | Posture / shoulders / hands / head angle |
-| Motion idea | Movement that communicates the emotion |
-| Props | Optional supporting object |
-| Static or GIF | Whether motion adds meaning |
-| Distinctness from pack | How this differs from the nearest existing sticker in intent and performance |
-| Caption reveal beat | When text appears, or why no caption is needed |
-| Notes | Special requirements |
+| Emotion / tone | Main emotion and social tone |
+| Face / action | Key facial expression and body gesture |
+| Misreading to avoid | Record only when a plausible ambiguity exists |
+| Format | Static PNG or GIF, when known; infer when obvious |
 
-## 2. Choose static PNG or animated GIF
+The production system may derive intensity, gaze, pose details, timing, props, and other implementation details. Do not make the user fill these unless they materially affect the result.
 
-Choose **static** when one pose communicates clearly and motion adds little meaning.
+## 2. Batch definition gate
 
-Choose **GIF** when motion adds meaning: nodding, waving, trembling / crying, clapping, sighing, changing facial state, peeking, recoiling, or sleepy drifting.
+Before producing a batch:
 
-Do not animate by default.
+1. Parse the user's requested phrases or situations.
+2. Create one compact row for each sticker using the minimum fields above.
+3. Check whether the pack has distinct chat uses and whether any items are near-duplicates.
+4. If a phrase has multiple materially different meanings, clarify that phrase only.
+5. If the user is unsure what an expression should look like or how the pack should progress, use targeted web research and propose a concise interpretation.
+6. Present the compact list for approval only when the meaning/action has been inferred or proposed in a way that could materially change the result.
+7. After approval, lock the list for production. Do not silently add, remove, rename, or reinterpret items.
 
-## 3. Batch confirmation process
+If the user already supplied a clear list and intended meaning, do not ask them to repeat or reconfirm it.
 
-1. Parse the user's phrases or situations.
-2. Fill one definition row per sticker.
-3. Clarify only genuinely ambiguous meanings.
-4. If the requested pack needs more items, propose additions and mark them as suggestions.
-5. Present a compact phrase + intended meaning + visual action list for confirmation when the request is not already clear.
-6. After confirmation, use the approved character model sheet as the identity anchor for every sticker.
+## 3. Expression progression
 
-## 4. Example definition table
+A pack should have useful coverage and visual variety. Consider:
+- different communication functions (acknowledge, react, request, reassure, thank, celebrate, refuse, tease, etc.)
+- different emotional tones and intensities
+- different facial acting and gestures
+- common situations in which the user would send the sticker
 
-| Sticker ID | Caption | Intended meaning | Emotion | Intensity | Face | Body | Motion idea | Format |
-|---|---|---|---|---:|---|---|---|---|
-| ST-01 | 无语 | 无奈、懒得多说 | drained annoyance | 2 | half-lidded eyes, flat mouth | chin in hands / small exhale | slow blink + tiny sigh | GIF |
-| ST-02 | 哼！ | 傲娇、不服气 | stubborn pout | 3 | eyes closed, pouting mouth | arms crossed, head turned away | small head turn + puff | GIF |
-| ST-03 | what?! | 惊讶、没想到 | surprise | 4 | wide eyes, raised brows, open mouth | slight recoil | recoil + hold | GIF |
-| ST-04 | 嘿嘿 | 偷笑、得意 | smug delight | 2 | squinting smile | shoulders tucked in | tiny shoulder bounce | GIF |
-| ST-05 | 不嘻嘻 | 收起假笑、认真起来 | mood drop | 3 | smile disappears, flat stare | hands on hips / still pose | expression shift | GIF |
-| ST-06 | 爱你！ | 亲昵表达 | affection | 3 | smiling eyes, warm smile | heart gesture | form heart + hold | GIF |
-| ST-07 | 碎觉觉 | 要去睡了 / 困了 | sleepiness | 1 | droopy eyelids | hug pillow / sway | yawn + drift | GIF |
+A narrative progression is optional. Do not force every pack into a story. Use web research only when the user is unsure or when suitable examples would materially improve the proposal.
 
-These are examples, not fixed interpretations. Follow the user's intended nuance and context.
+## 4. Web research as inspiration
 
-## 5. Semantic quality checks
+When needed, search public examples for the phrase, emotion, chat context, gesture, or expression sequence. Prefer sources with clear authorship and relevant visual examples. Record the source link and what general idea is being borrowed.
 
-Before production, verify:
-- intended meaning is clear
-- ambiguous phrases have been clarified only where necessary
-- intensity matches the user's actual use case
-- proposed action supports the emotion
-- the sticker is distinct from others in the same pack
+Use research to understand common visual conventions, gesture choices, emotional intensity, and pack coverage. Do not reproduce another creator's character, distinctive artwork, exact composition, or a complete sticker. The user's approved character and style references remain authoritative.
 
-## 6. Pack-level collision review
+See `docs/11-expression-reference-research.md`.
 
-Before production, compare each row against all other rows and the approved sticker index for the same series. Review caption, communicative act, emotion, face, gesture, motion arc, prop, and chat context. If two rows are near-duplicates, differentiate them, replace one, merge them, or hold them for clarification. Do not rely on wording changes alone.
+## 5. Internal production brief
 
-For every caption, state whether it is absent, visible from the opening, or revealed at a specific emotional beat. Avoid repeating one phrase as both a permanent heading and an in-scene caption.
+After the user-facing definition is confirmed, the production brief may expand each item with:
+- communicative act and typical chat context
+- intensity (1–5)
+- intended recipient reading
+- detailed eyes / brows / mouth / cheeks / gaze
+- posture / shoulders / hands / head angle
+- props
+- motion arc and emotional peak
+- caption reveal beat
+- distinctness from the nearest approved sticker
 
-## 7. Revision handling
+These are production details. Keep the user-facing confirmation compact.
 
-Translate feedback into an explicit field update:
-- “太夸张了” → lower intensity
-- “不是这个意思” → revise intended meaning
-- “这个动作不对” → replace body acting / motion idea
-- “更像生气，不像无语” → revise facial acting and emotion cues
-- “不需要动” → change GIF to static
-
-Do not make unrelated visual changes.
-
-## 8. Compact worksheet
+## 6. Compact worksheet
 
 ```text
 Sticker ID:
-Visible caption:
-Intended meaning:
-Emotion:
-Intensity (1–5):
-Typical use context:
-Misreading to avoid:
-Facial acting:
-Body acting:
-Motion idea:
-Prop:
-Static or GIF:
-Distinctness from pack:
-Caption reveal beat:
-Notes:
+Exact caption:
+Intended meaning / chat use:
+Emotion / tone:
+Key facial expression:
+Key body action:
+Misreading to avoid (if any):
+Static or GIF (if known):
 ```
+
+## 7. Revision handling
+
+Translate feedback into a specific field update:
+- “太夸张了” → lower emotion intensity
+- “不是这个意思” → revise intended meaning
+- “这个动作不对” → replace facial/body acting or motion
+- “更像生气，不像无语” → revise emotion cues
+- “不需要动” → change GIF to static
+
+Do not make unrelated visual changes.
