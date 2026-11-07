@@ -210,3 +210,44 @@ Stop when every requested item has:
 - mobile-friendly preview and download access
 
 Do not add extra variations merely to increase pack size.
+
+
+## 12. Batch definition lock
+
+Before generation, lock the exact list of stickers and their intended meanings. Each item needs only:
+- exact caption (or no caption)
+- intended meaning / chat use
+- emotion / tone
+- key facial expression and body action
+- likely misreading to avoid, if any
+
+If the user already gave clear meanings, infer the remaining production details and do not ask for redundant confirmation. Clarify only materially ambiguous items. If the user is unsure how to express a phrase or how the pack should progress, use targeted web research for suitable public examples, record source links, and propose interpretations for approval. Do not copy distinctive third-party artwork or characters. See `docs/11-expression-reference-research.md`.
+
+Once approved, treat the list as locked. Do not silently add, remove, rename, or reinterpret items during production.
+
+## 13. Preserve the successful recipe
+
+For every series with a user-approved batch, record the actual production recipe:
+- generation tool/model and version, when available
+- actual identity, style, motion, composition, and text references loaded
+- prompt/template version
+- production mode (coordinated batch, independent, or hybrid)
+- working and export canvas
+- transparency handling
+- crop, split, compositing, and post-processing steps
+- per-item result and user approval
+
+Reuse the last successful recipe for that same character series by default. Do not change model, generation mode, reference set, prompt structure, or post-processing midway through a batch without recording the reason. If a later batch degrades, pause and compare the successful and current recipe before producing more. Change one material variable at a time where practical.
+
+A reference manifest documents intended assets; it does not prove they were actually loaded. Verify the reference files used in the current run.
+
+## 14. Five-point first-pass acceptance
+
+Before detailed GIF review, every final sticker must pass:
+1. Character appearance is aesthetically acceptable and consistent with the approved character.
+2. Caption is exact, legible, non-overlapping, and not duplicated.
+3. Expression and action fit the caption and intended meaning.
+4. Canvas is square (1:1) by default, at the approved series dimensions.
+5. Background is genuinely transparent in the exported file; for GIF, verify every frame.
+
+Only after these five pass should the item proceed to additional animation, loop, integrity, and platform QA.
