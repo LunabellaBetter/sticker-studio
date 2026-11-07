@@ -1,105 +1,97 @@
 # 05 · Reference-Driven Sticker-Pack Workflow
 
-**Purpose:** Turn user-supplied character references and a confirmed expression list into a consistent, usable sticker pack.
+**Purpose:** Produce a coherent sticker pack while preserving an approved character identity, a confirmed expression list, and a reproducible production method.
 
 ## 1. Reference roles
 
-- Reference A — character identity: user's photo, pet photo, illustration, avatar, or existing character. This determines who the character is.
-- Reference B — visual style (optional): a Notion style card or image guiding linework, texture, palette, and rendering. It must not replace identity from Reference A.
-- Reference C — layout (optional): a 4×4 / 3×4 / other sticker-sheet layout. It controls the review arrangement only; it must not change the character.
+Keep reference roles separate:
 
-If the user provides only one image, do not invent extra reference requirements.
+- **Character identity:** approved model sheet / character lock. Defines who the character is.
+- **Style:** linework, texture, palette, and rendering.
+- **Motion:** approved GIFs or key poses demonstrating facial/body acting and pace.
+- **Composition:** canvas ratio, character scale, crop, margins, and layout.
+- **Text treatment:** caption shape, placement, typography, and reveal behavior.
+- **Approved output:** a complete user-approved sticker demonstrating several of the above dimensions. Record exactly which dimensions it is approved to guide.
 
-## 2. Workflow
+An approved output from another character series may guide style, composition, text, expression, or motion only. It must never replace the current character's identity anchor.
 
-### Stage 1 — Read the reference
-Identify the intended subject and visible identity anchors. If several people appear, establish which one is the sticker subject only when unclear.
+## 2. Mandatory pre-production gates
 
-### Stage 2 — Create one character lock sheet
-Create one coherent illustrated character based on the supplied reference. Include a neutral view and a small range of expressions to test identity stability.
+### Gate A — Character lock
+Use the current series' approved character model sheet as the identity anchor. Confirm that the actual image reference is available and loaded in the generation/editing step. A manifest entry or written description alone is not proof of loading.
 
-### Stage 3 — User approval
-Ask whether this single proposed character matches the reference. Revise it until approved. Do not ask the user to compare three unrelated concepts.
+### Gate B — Batch definition
+Before final generation, prepare one compact row per sticker:
 
-### Stage 4 — Confirm sticker content
-Translate the user's phrases / situations into exact caption, intended meaning, emotion and intensity, face and body language, and static or animated treatment. For a large batch, prepare a compact list for approval. Clarify only genuinely ambiguous meanings.
+| Required item | Record |
+|---|---|
+| Exact caption | The exact words, punctuation, or “no caption” |
+| Intended meaning | What the sender wants to communicate |
+| Emotion / tone | The primary emotion and social tone |
+| Face / action | The key facial expression and body gesture |
+| Misreading to avoid | Only when a plausible wrong reading exists |
 
-### Stage 5 — Generate the sticker sheet
-Use the approved model sheet as the character identity reference. Generate one coordinated sheet with distinct expressions and varied poses. Keep every cell clearly separated and avoid repeated compositions.
+If the user already supplied a clear list and intent, complete the rows from context and proceed. Do not ask for redundant confirmation. Ask only about consequential ambiguity. Do not generate final assets until the list is clear and the user has approved any proposed interpretation that materially changes the meaning.
 
-### Stage 6 — Split into individual files
-The sheet is a contact sheet for review, not the final deliverable. Crop or reconstruct each sticker as an independent transparent-background asset. Check that no neighboring cell, border, or caption is accidentally included.
+### Gate C — Expression progression and research
+A pack should cover distinct, useful chat situations and avoid near-duplicates. A forced story arc is not required. If the user is unsure how a phrase should be expressed or how the pack should progress, use targeted web research to find suitable public examples and propose a concise set of options. Record sources and borrow general acting/gesture ideas only; do not copy distinctive artwork or another creator's character. See `docs/11-expression-reference-research.md`.
 
-### Stage 7 — Animate selectively
-Choose GIF for expressions where motion adds meaning (nodding, waving, trembling, laughing, sighing). Keep other stickers static when a single pose communicates better. Follow the animation storyboard and QA checklist.
+## 3. Choose and lock the production method
 
-## 3. Adapted multi-sticker prompt template
+There is no single mandatory generation mode for every tool or series. Select from:
 
-This template borrows the batch-production structure from Notion S37 / S38 while strengthening identity preservation. It does not impose their rough MS Paint aesthetic.
+1. **Coordinated batch generation:** use when this method has already produced approved results for the same series and the generator can preserve identity and separation reliably.
+2. **Independent sticker generation:** use when individual expressions require more control, when the generator drifts in a batch, or when complex captions/actions need separate handling.
+3. **Hybrid production:** plan the whole pack together, generate a coordinated base or contact sheet where useful, then reconstruct/finish each item independently.
 
-~~~text
-Create a coordinated chat sticker pack using Reference A as the sole source of character identity.
+**Reproducibility rule:** For a series with a previously successful method, reuse that method and its model/tool, references, prompt structure, and post-processing recipe by default. Do not switch methods midway through a batch without recording the reason. If a drift appears, pause and compare the last successful run with the current run before continuing.
 
-CHARACTER IDENTITY
-- Preserve the recognizable face / head silhouette, hairstyle, hair color, distinctive visible features, proportions, and approved outfit language from Reference A.
-- Translate the reference into the approved illustration style without changing who the character is.
-- Keep the same character design, line quality, palette, rendering, and proportions across every sticker.
-- Expressions, poses, gestures, props, and captions may vary; identity anchors must not drift.
-- Do not invent a different character, alter the hairstyle between cells, or randomly change clothing.
+A contact sheet is always an intermediate review artifact. It is never the final independent sticker deliverable.
 
-STICKER CONTENT
-- Use the user-confirmed captions and expression briefs below.
-- Each cell must express a distinct communicative intent, not merely a different mouth shape.
-- Vary facial expression, gaze, posture, gesture, and composition to match each intent.
-- Match the language and exact wording supplied by the user.
-- Do not add, omit, rewrite, or misspell captions without permission.
-- If a caption is intentionally absent, do not add one.
+## 4. Production and export
 
-LAYOUT
-- Create [N] clearly separated stickers in a [GRID] contact sheet.
-- Each cell is an independent composition with enough padding for later cropping.
-- Avoid shared body parts, overlapping characters across cell boundaries, panel borders, cell numbers, and decorative clutter.
-- Do not force every cell into an identical pose or composition.
-- Keep the character's scale and visual identity consistent across the set.
+- Use the same approved identity anchor for every item.
+- Keep the batch-level style, composition, caption treatment, and export profile consistent.
+- Each item must have one clear communicative intent.
+- Each final sticker must be independently exported as its own PNG or GIF.
+- For GIFs, preserve the same canvas size and character anchor across all frames.
+- Keep exact caption wording; do not add, remove, duplicate, or rewrite text without permission.
+- Do not silently carry props, captions, or visual motifs from a neighboring sticker into the current one.
 
-OUTPUT
-- The contact sheet is for review.
-- Each sticker must also be exportable as a separate transparent-background asset.
-- Do not add a background that prevents clean separation.
-- Prioritize small-size legibility and recognizable expression.
-- Mark uncertain text or visual detail for review instead of silently inventing it.
+## 5. Five-point user-priority QA
 
-Reference B may guide visual style only.
-Reference C may guide grid layout only.
-Neither may override character identity from Reference A.
+Every final sticker must pass all five checks:
 
-APPROVED CHARACTER MODEL:
-[Attach approved model sheet / character reference]
+1. **Character appearance:** aesthetically acceptable and consistent with the approved character identity/style.
+2. **Caption layout:** exact, readable wording; no overlap, accidental duplication, or obstruction.
+3. **Meaning match:** expression, gaze, pose, and action fit the caption and intended meaning.
+4. **Square canvas:** 1:1 by default, using the approved project-specific pixel dimensions. Never stretch artwork to force a square.
+5. **Transparent background:** verify actual transparency in the exported file; for GIF, inspect every frame after palette conversion.
 
-CONFIRMED STICKER LIST:
-[Paste confirmed captions and expression briefs]
-~~~
+These are the first approval gate. A failure in any one means `needs-revision`.
 
-## 4. Style consistency vs. identity consistency
+## 6. Additional GIF and file QA
 
-A batch can look stylistically consistent while depicting a slightly different person in every cell. That is insufficient.
+For animated outputs, also verify:
+- one GIF = one sticker = one communicative intent
+- meaningful facial change; body motion supports the emotion
+- natural timing, readable peak hold, and deliberate loop
+- no jitter, flicker, shape mutation, or frame-to-frame identity drift
+- the GIF opens and plays in a standard viewer
+- all frames use identical canvas dimensions
+- file size and format meet the named platform's current requirements
 
-Verify:
-- same person / character
-- same face construction and hairstyle
-- same proportions and outfit language
-- same illustration language
-- distinct, semantically correct expressions
+Inspect the actual exported file, not only the generation preview.
 
-## 5. Delivery structure
+## 7. Delivery structure
 
 Recommended per-pack structure:
-- character/ — approved model sheet and identity notes
-- source/ — source references and approved prompts
-- sheet/ — contact sheet preview
-- stickers/png/ — individual static stickers
-- stickers/gif/ — individual animated stickers
-- storyboards/ — key poses and frame notes
-- qa/ — review results and revisions
+- `character/` — approved model sheet and identity notes
+- `source/` — source references and approved prompts
+- `sheet/` — contact sheet preview, clearly marked as preview
+- `stickers/png/` — individual static stickers
+- `stickers/gif/` — individual animated stickers
+- `storyboards/` — key poses and frame notes
+- `qa/` — per-item checks and revision notes
 
 Keep the contact sheet and individual exports linked by stable sticker IDs.
