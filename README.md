@@ -89,3 +89,13 @@ See [references/README.md](references/README.md), [visual direction](references/
 - Sticker: draft → needs-revision → approved → published
 - A successful export does not equal QA approval.
 - Do not merge unreviewed changes into `main`.
+
+
+## Batch stability and approval
+
+- Confirm the exact sticker list and intended meaning before final generation; clarify only consequential ambiguity.
+- If expression ideas or pack progression are uncertain, use targeted web research for inspiration and record sources; never copy another creator's distinctive artwork.
+- Reuse the previously successful production recipe for the same character series. Do not change model, generation mode, references, or post-processing midway through a batch without recording the change.
+- Every final sticker must pass the five-point contract: approved character appearance, clear/non-overlapping caption, caption-to-expression match, square 1:1 canvas by default, and verified transparent background.
+- Read [Expression Reference Research](docs/11-expression-reference-research.md) when external visual inspiration is useful.
+- Approved output references are separate from character identity references. They may guide style, expression, caption treatment, composition, or motion only for the dimensions they demonstrate.
