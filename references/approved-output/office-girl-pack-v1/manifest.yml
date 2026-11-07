@@ -73,7 +73,7 @@ assets:
     width: 658
     height: 597
     bytes: 394074
-    sha256: "8e6f5e179ce1c0e15e55d6ac4a544f266d4e305e20b3bd2a96c46c821f2ba3f2"
+    sha256: "8e6f5e179ce0c1e15e55d6ac4a544f266d4e305e20b3bd2a96c46c821f2ba3f2"
     binary_ingestion: pending
   - id: OG-06
     caption: "马上就好"
@@ -100,7 +100,7 @@ assets:
     width: 627
     height: 627
     bytes: 470179
-    sha256: "2b9c715555ee1d1bd5f3fd817aa2a27632d4b2f9f2744260b2589d364ef6e0aa"
+    sha256: "2b9c715555ee1d1bd5f3fd817aa2a27632d4b2f9f2744260b2589d364ff6e0aa"
     binary_ingestion: pending
   - id: OG-09
     caption: "期待"
