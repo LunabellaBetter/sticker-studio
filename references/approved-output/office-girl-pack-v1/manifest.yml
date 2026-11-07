@@ -1,0 +1,122 @@
+schema_version: 1
+pack_id: office-girl-pack-v1
+pack_name: "Office Girl Sticker Pack V1"
+status: approved-output-reference
+source:
+  origin: user-supplied files in ChatGPT conversation
+  publication: user confirms the set was published on the user's Xiaohongshu account
+  repository_permission: user explicitly authorized use as references in this public repository
+  identity_scope: "This office-girl character series only"
+  may_replace_other_character_identity: false
+  may_reuse_as_child_character_identity: false
+
+allowed_reference_roles:
+  - style
+  - expression-semantics
+  - motion
+  - composition
+  - caption-treatment
+
+not_authorized_by_this_reference:
+  - replacing another series' character identity
+  - copying another creator's distinctive artwork
+  - treating the original canvas ratio as the default export ratio
+
+technical_inspection:
+  format: GIF
+  frame_count: 4
+  transparent_pixels_verified_in_all_files: true
+  square_canvas: false
+  note: "Original canvases vary. Use as visual references only; future chat-sticker exports default to square 1:1 unless the user approves another profile."
+
+assets:
+  - id: OG-01
+    caption: "破防了"
+    source_filename: "破防了(1).gif"
+    repository_filename: "01-breakdown.gif"
+    width: 656
+    height: 599
+    bytes: 364118
+    sha256: "552aa29fcdf70da2b27f11f0a9386fe34239df39832013feae922da1e2f90e06"
+    binary_ingestion: pending
+  - id: OG-02
+    caption: "鞠躬感谢"
+    source_filename: "鞠躬感谢(1).gif"
+    repository_filename: "02-bow-thank-you.gif"
+    width: 627
+    height: 637
+    bytes: 386242
+    sha256: "cbabbe7e5c290ed8e205ef318ee323f53ccfa8ceebfd4658b9371ae89c9e3732"
+    binary_ingestion: pending
+  - id: OG-03
+    caption: "你品，你细品"
+    source_filename: "你品，你细品.gif"
+    repository_filename: "03-read-between-lines.gif"
+    width: 656
+    height: 599
+    bytes: 422478
+    sha256: "6c473f354611ba20ec0bb38e54a918379d16608c86e1d36f464192528358fba6"
+    binary_ingestion: pending
+  - id: OG-04
+    caption: "困困"
+    source_filename: "困困.gif"
+    repository_filename: "04-sleepy.gif"
+    width: 887
+    height: 443
+    bytes: 316705
+    sha256: "9c89b0967a24e36385750b3e2954f54e9d5fb9cd36067bd667fe57b9574460fa"
+    binary_ingestion: pending
+  - id: OG-05
+    caption: "摸鱼中"
+    source_filename: "摸鱼(1).gif"
+    repository_filename: "05-slacking-off.gif"
+    width: 658
+    height: 597
+    bytes: 394074
+    sha256: "8e6f5e179ce1c0e15e55d6ac4a544f266d4e305e20b3bd2a96c46c821f2ba3f2"
+    binary_ingestion: pending
+  - id: OG-06
+    caption: "马上就好"
+    source_filename: "马上就好.gif"
+    repository_filename: "06-almost-done.gif"
+    width: 656
+    height: 599
+    bytes: 496743
+    sha256: "ae9f029af21f21b703e01a54b9948e3883542071ced831e08a6b597575a16181"
+    binary_ingestion: pending
+  - id: OG-07
+    caption: "求放过"
+    source_filename: "求放过.gif"
+    repository_filename: "07-give-me-a-break.gif"
+    width: 660
+    height: 600
+    bytes: 422048
+    sha256: "01b3fc6ef60637e11d8439da36b66688d44847872569e9c5da6f633ddf8262a6"
+    binary_ingestion: pending
+  - id: OG-08
+    caption: "灵魂出窍"
+    source_filename: "灵魂出窍.gif"
+    repository_filename: "08-out-of-body.gif"
+    width: 627
+    height: 627
+    bytes: 470179
+    sha256: "2b9c715555ee1d1bd5f3fd817aa2a27632d4b2f9f2744260b2589d364ef6e0aa"
+    binary_ingestion: pending
+  - id: OG-09
+    caption: "期待"
+    source_filename: "期待.gif"
+    repository_filename: "09-looking-forward.gif"
+    width: 627
+    height: 627
+    bytes: 360123
+    sha256: "e91fb7c9f8e2dc0c5030b12f9647ce17bbbcc756dcd7e056a98f182efb458ef2"
+    binary_ingestion: pending
+  - id: OG-10
+    caption: "溜了溜了"
+    source_filename: "溜了溜了.gif"
+    repository_filename: "10-logging-off.gif"
+    width: 627
+    height: 627
+    bytes: 322701
+    sha256: "feaad764a29e06f68ab8ae343ef7c698b469e2fb1a28b70fdb03a4639e75ff31"
+    binary_ingestion: pending
