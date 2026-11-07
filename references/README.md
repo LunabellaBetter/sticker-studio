@@ -9,6 +9,7 @@ This directory defines how reference material is organized and used.
 | `character/` | Approved model sheets and identity notes | Yes — this is the identity source |
 | `style/` | Linework, texture, palette, and rendering examples | No |
 | `motion/` | Approved GIFs / keyframe examples showing motion quality | No |
+| `approved-output/` | Complete user-approved sticker outputs; guide only the dimensions they demonstrate | No, unless explicitly approved as identity |
 | `layout/` | Contact-sheet and crop-layout examples | No |
 | `prompts/` | Reusable generation and animation prompt templates | No |
 
