@@ -1,3 +1,15 @@
+# User-priority first-pass gate
+
+Before detailed animation review, every final sticker must pass these five checks:
+
+- [ ] **Character appearance:** visually pleasing and consistent with the approved character identity and style.
+- [ ] **Caption layout:** exact wording, readable, with no overlap, accidental duplication, or obstruction.
+- [ ] **Meaning match:** facial expression, gaze, pose, and action fit the caption and intended chat meaning.
+- [ ] **Square canvas:** 1:1 by default, using the approved project-specific pixel dimensions; never stretch the artwork.
+- [ ] **Transparent background:** actual transparency is present in the exported file; for GIF, verify all frames after palette conversion.
+
+Any failure means `needs-revision`. These are the user's first approval criteria. The detailed checks below remain additional quality controls.
+
 # 04 · Quality Assurance
 
 A GIF is approved only when it passes semantic, visual, temporal, and technical review.
