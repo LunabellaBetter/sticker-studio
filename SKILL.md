@@ -133,3 +133,27 @@ Do not label a static image as a GIF. Do not mark a pack approved until each fil
 ## Change control
 
 Preserve the approved character and visual direction. Apply feedback only to the affected expression or production parameter unless the user requests a wider redesign. Keep source, key poses, exports, and QA notes traceable.
+
+
+## Batch definition and approval gate
+
+Before final generation, prepare a compact definition for every requested sticker: exact caption, intended meaning/use, emotion/tone, key face/body action, and any misreading to avoid. If the user's list and meaning are already clear, fill the details from context and proceed without unnecessary reconfirmation. Ask one focused question only for a materially ambiguous phrase. Do not start final production while the list or a consequential ambiguity is unresolved.
+
+When the user is unsure how an expression should look or how the pack should progress, use targeted web research to find suitable public examples and propose interpretations. This is optional and only used when it adds value. Borrow general expression ideas, gesture logic, emotional progression, or chat-use patterns; do not copy another creator's character, distinctive artwork, or complete composition. Record useful source links in the batch brief and let the user approve the interpretation. Read `docs/11-expression-reference-research.md`.
+
+## Reuse successful production recipes
+
+For a character series with previously approved batch results, reuse the same verified production method, model/tool, identity anchor, style/output references, prompt structure, and post-processing path. A previous successful batch is evidence to preserve, not a reason to redesign the process. Do not switch generation modes midway through a batch without recording why. If quality drifts, pause and compare the successful and current run before continuing.
+
+The Skill and manifest do not prove that an image reference was actually loaded. Verify the actual reference files used in the current generation step. Record the method and reference IDs for each batch.
+
+## Five-point final delivery contract
+
+Every final sticker must pass these user-priority checks:
+1. Character appearance is aesthetically acceptable and matches the approved character identity/style.
+2. Caption wording is exact, legible, and does not overlap, duplicate, or obstruct the character.
+3. Facial expression and body action match the caption and intended meaning.
+4. Canvas is square (1:1) by default, using the approved project-specific pixel size; never distort artwork to force the ratio.
+5. Background is genuinely transparent in the exported file; for GIF, verify transparency across all frames.
+
+These five checks are the first approval gate. GIF timing, natural movement, loop continuity, file integrity, and platform limits remain additional checks for animated deliverables.
