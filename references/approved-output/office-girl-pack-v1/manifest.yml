@@ -25,7 +25,7 @@ not_authorized_by_this_reference:
 technical_inspection:
   format: GIF
   frame_count: 4
-  transparent_pixels_verified_in_all_files: true
+  transparent_pixels_verified_in_every_frame_of_all_files: true
   square_canvas: false
   note: "Original canvases vary. Use as visual references only; future chat-sticker exports default to square 1:1 unless the user approves another profile."
 
