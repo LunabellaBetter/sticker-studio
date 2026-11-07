@@ -95,3 +95,36 @@ Recommended per-pack structure:
 - `qa/` — per-item checks and revision notes
 
 Keep the contact sheet and individual exports linked by stable sticker IDs.
+
+
+## 8. Batch prompt skeleton
+
+Use the current series' approved identity reference and the confirmed batch definition. Keep the production mode consistent with the last successful batch for this series.
+
+```text
+Create the confirmed sticker pack for [SERIES / CHARACTER ID].
+
+IDENTITY
+Use [APPROVED CHARACTER REFERENCE] as the only source of character identity.
+Do not redesign the face, hairstyle, proportions, outfit language, or signature features.
+
+STYLE / OUTPUT REFERENCES
+Use [APPROVED OUTPUT REFERENCES] only for their recorded roles:
+[STYLE / EXPRESSION / MOTION / COMPOSITION / CAPTION TREATMENT].
+Do not transfer another series' character identity.
+
+LOCKED OUTPUT PROFILE
+Canvas: square 1:1, [APPROVED PIXEL SIZE].
+Background: transparent.
+Keep the character visually dominant and preserve safe margins.
+Caption: exact wording below; no duplicate text or overlap.
+
+CONFIRMED STICKER DEFINITIONS
+[PASTE THE APPROVED BATCH DEFINITION TABLE]
+
+PRODUCTION
+Use the already approved production method for this series: [BATCH / INDIVIDUAL / HYBRID].
+Do not add, remove, rename, or reinterpret stickers.
+Export each sticker as an independent file.
+Inspect the actual export against the five-point acceptance contract.
+```
